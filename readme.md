@@ -5,7 +5,7 @@
 ![alt-text-1](images/Pic1.jpg "Touchscreen operant box version 1") ![alt-text-1](images/Pic2.jpg "Touchscreen operant box version 2")
 
 Saves time, and produces more performance variables (about 70 organised behavioural outcomes measures) than default ABET method. 
-- The program saves time as (i) databases doesn't have to be analysed separately, e.g., run the analysis on as many ABETdb files you want with one keypress and 
+- The program saves time as databases doesn't have to be analysed separately, e.g., run the analysis on as many ABETdb files you want with one keypress and 
 - The program recognises the Animal IDs even though the animal was run on different sets and stored in different databases, 
 - The program calculates collapsed mean, for all the sessions for each animal that the user specified to analyse, for all outcomes variables, in seperate excel sheet, so no need to fiddle about copy-pasting spreadsheets/csv files and calculating means.   
 
@@ -94,7 +94,7 @@ To run, just place all databases (.ABETdb files) that should be analysed in same
 
 
 ##### Dependencies
-* The microsoftdB --> SQLite conversion requires[mdb-export-all](https://github.com/pavlov99/mdb-export-all)
+* The microsoftdB --> SQLite conversion requires [mdb-export-all](https://github.com/pavlov99/mdb-export-all)
 * statistics
 * pandas
 * sqlite3
