@@ -1,17 +1,17 @@
 ## ABET SQL analyzer in python 3.x
 
-#### Coverts Campden Lafayette ABETdb touchscreen databases to [SQLite](https://docs.python.org/2/library/sqlite3.html) format, and analyses rCPT data generated in the Campden Lafayette system. The output provided in two multi-sheet excel files.
+#### Coverts Campden Lafayette [ABETdb touchscreen databases](http://lafayetteneuroscience.com/products/abetii-touch-screen-software) to [SQL](https://docs.python.org/2/library/sqlite3.html) and analyses [rCPT data](https://campdeninstruments.com/products/image-cpt-mice) generated in the Campden Lafayette system. The output provided in two multi-sheet excel files.
 
 ![alt-text-1](images/Pic1.jpg "Touchscreen operant box version 1") ![alt-text-1](images/Pic2.jpg "Touchscreen operant box version 2")
 
-Saves time, and produces more performance variables (about 70 organised behavioural outcomes measures) than default ABET method. 
-- The program saves time as databases doesn't have to be analysed separately, e.g., run the analysis on as many ABETdb files you want with one keypress and 
-- The program recognises the Animal IDs even though the animal was run on different sets and stored in different databases, 
-- The program calculates collapsed mean, for all the sessions for each animal that the user specified to analyse, for all outcomes variables, in seperate excel sheet, so no need to fiddle about copy-pasting spreadsheets/csv files and calculating means.   
+Can save time, and produces more performance variables (about 70 organised behavioural outcomes measures) than default ABET method. 
+- The program can save time as databases doesn't have to be analysed separately, e.g., run a single analysis on as many ABETdb files you want. 
+- The program recognises the Animal IDs even though the animal was run on different sets and stored in different databases.
+- The program calculates collapsed mean, for all the sessions for each animal that the user specified to analyse, for all outcomes variables, in seperate excel sheet. 
 
-To run, just place all databases (.ABETdb files) that should be analysed in same folder as the program and run abet_cal.py.
+To run, place all databases (.ABETdb files) that should be analysed in same folder as the program and run abet_cal.py.
 
-##### The program gives six options for specifying which sessions to analyse:
+##### The CLI program gives six options for specifying which sessions to analyse:
 
 * 1 - Animal IDs: Extract and Analyse data defined by animal IDs
 * 2 - Calender: Extract and Analyse data defined by experiment dates
@@ -20,7 +20,7 @@ To run, just place all databases (.ABETdb files) that should be analysed in same
 * 5 - Computer: Extract and Analyse data from specific computer(s)
 * 6 - All data: Extract and Analyse entire database(s)
 
-##### The program extracts then extracts the following, standard, behavioural variables for each session and collapsed descriptive statistics for the analyzed sessions:
+##### The program extracts then extracts the following, standard, behavioural variables for each session, as well as collapsed descriptive statistics for the analyzed sessions:
 
 * Hits, misses, false alarms, and correct rejections
 * Hit rate, False alarm rate
@@ -85,13 +85,11 @@ To run, just place all databases (.ABETdb files) that should be analysed in same
 * Latency Retrieval --> Front Beam Break (KURTOSIS)
 * Latency Retrieval --> Front Beam Break (VARIANCE)
 
-
 ##### The code also extracts false alarm rates for each of four non-target stimuli, in output-sheet FAR_by_Stimuli:
 * FAR stimulus 1/2
 * FAR stimulus 3
 * FAR stimulus 4
 * FAR stimulus 5
-
 
 ##### Dependencies
 * The microsoftdB --> SQLite conversion requires [mdb-export-all](https://github.com/pavlov99/mdb-export-all)
